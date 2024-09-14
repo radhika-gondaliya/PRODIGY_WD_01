@@ -1,0 +1,78 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Style for the fixed navigation menu */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu li {
+  margin: 0 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ff6347; /* Change color on hover */
+  border-bottom: 2px solid #ff6347;
+}
+
+/* Section styles */
+section {
+  padding: 100px;
+  text-align: center;
+  height: 100vh;
+}
+
+#home {
+  background-color: #f4f4f4;
+}
+
+#about {
+  background-color: #f1f1f1;
+}
+
+#services {
+  background-color: #e2e2e2;
+}
+
+#contact {
+  background-color: #d1d1d1;
+}
+
+/* Change the color of navbar when scrolling */
+.scrolled {
+  background-color: #333;
+}
+
+.scrolled a {
+  color: white;
+}
